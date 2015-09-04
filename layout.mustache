@@ -12,6 +12,94 @@
   </style>
 </head>
 <body>
+<div style="display:none">
+\(
+% theorem
+\newenvironment{pf}{\textbf{Proof.}}{\rule{1ex}{1ex}}
+\newtheorem{qu}{Question}
+\newtheorem{thm}{Theorem}
+\newtheorem{rmk}{Remark}
+\newtheorem{go}{Goal}
+\newtheorem{df}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{mot}{Motivation}
+\newtheorem{ex}{Example}
+\lstnewenvironment{code}{}{}
+
+\newcommand{\nc}{\newcommand}
+
+%% env
+
+\nc{\env}[2]{
+\begin{#1}
+#2
+\end{#1}
+}
+\nc{\arr}[2]{
+\begin{array}{#1}
+#2
+\end{array}
+}
+\nc{\arrb}[2]{
+\left\{
+\begin{array}{#1}
+#2
+\end{array}
+\right.
+}
+\nc{FTC}[3]{
+\left[#3\right]^{#2}_{#1}
+}
+\nc{\bracs}[1]{
+\left[#1\right]
+}
+\nc{\brac}[1]{
+\left(#1\right)
+}
+\nc{\bracp}[1]{
+\left\{#1\right\}
+}
+\nc{\intd}[4]{\int^{#2}_{#1}\left(#3\right) #4}
+
+% shortcut
+
+\nc{\Lra}{\Leftrightarrow}
+\nc{\Ra}{\Rightarrow}
+\nc{\La}{\Leftarrow}
+\nc{\C}{\mathbb{C}}
+\nc{\R}{\mathbb{R}}
+\nc{\Fc}{\mathcal{C}}
+\nc{\bds}{\boldsymbol}
+\nc{\ds}{\displaystyle}
+
+% begin end
+
+\nc{\bit}{\begin{itemize}}
+\nc{\eit}{\end{itemize}}
+
+\nc{\bcode}{\begin{code}}
+\nc{\ecode}{\end{code}}
+
+\nc{\bsage}{\begin{sageblock}}
+\nc{\esage}{\end{sageblock}}
+
+%pic
+
+\nc{\pic}{\includegraphics}
+\nc{\svg}{\includesvg}
+\nc{\pica}{\includegraphics[width=100px,height=100px]}
+\nc{\picb}{\includegraphics[width=150px,height=150px]}
+\nc{\vs}{\vspace}
+\nc{\tbf}{\textbf}
+
+%arrow
+
+\nc{\upa}{\nearrow}
+\nc{\downa}{\searrow}
+\nc{\upw}{\rcurvearrowright}
+\nc{\downw}{\curvearrowright}
+\)
+</div>  
 <div class="reveal">
     <div class="slides">
       {{{slideshow}}}
