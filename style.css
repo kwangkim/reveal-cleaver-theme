@@ -324,11 +324,11 @@ pre .xml .vbscript,
 pre .tex .formula {
   opacity: 0.5;
 }
-/* KWANG
+
 code {
   background-color: #3F3F3F !important;
 }
-*/
+
 
 /*********************************************
  * Extra stuff for reveal-cleaver
