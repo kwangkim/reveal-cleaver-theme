@@ -213,13 +213,13 @@ span.small {
 Zenburn style from voldmar.ru (c) Vladimir Epifanov <voldmar@voldmar.ru>
 based on dark.css by Ivan Sagalaev
 
-KWANG background: #FFFFFF;
+KWANG background: #f9f9fa;
 
 */
 
 pre code {
   display: block; padding: 0.5em;
-  background: #FFFFFF;
+  background: #f9f9fa;
   color: #DCDCDC;
 }
 
